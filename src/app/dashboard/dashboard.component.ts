@@ -14,7 +14,7 @@ export class DashboardComponent implements OnInit {
   data1: any;
   value:number=34
   value1:number=45
-  selectedDate: Date = new Date();
+  date!: Date[];
   
 
     options1: any;

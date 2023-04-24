@@ -169,6 +169,7 @@
   background: #0d6efd;
   border-radius: 5px ;
   cursor: pointer;
+  
 }
 
 .sidebar .nav-links li.active {
@@ -239,6 +240,12 @@
 .sidebar .nav-links li.active a .link_name {
   color: white;
 }
+.sidebar .nav-links li:hover a .icons, 
+.sidebar .nav-links li.active a .icons {
+  color: white;
+}
+
+
 
 .sidebar.sidebar-close .nav-links li a .link_name {
   pointer-events: none;
@@ -275,6 +282,7 @@
 .sidebar .nav-links li .sub-menu li.active a {
   color: white;
 }
+
 
 .sidebar.sidebar-close .nav-links li .sub-menu {
   position: absolute;
