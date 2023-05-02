@@ -45,7 +45,7 @@ menuSidebar = [
         link: "data3",
       }, {
         link_name: "Data 4",
-        link: "/posts/login-form",
+        link: "data4",
       }, 
     ]
   }, {
@@ -65,13 +65,13 @@ menuSidebar = [
     sub_menu: [
       {
         link_name: "Data 5",
-        link: "Data",
+        link: "data5",
       }, {
-        link_name: "Data",
-        link: "/hello",
+        link_name: "Data 6",
+        link: "data6",
       }, {
         link_name: "Data 7",
-        link: "data",
+        link: "data7",
       }
     ]
   }, {

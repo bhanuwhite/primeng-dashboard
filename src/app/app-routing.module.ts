@@ -10,6 +10,11 @@ import { ExploreComponent } from './explore/explore.component';
 import { HistoryComponent } from './history/history.component';
 import { Data2Component } from './data2/data2.component';
 import { PluginsComponent } from './plugins/plugins.component';
+import { Data3Component } from './data3/data3.component';
+import { Data4Component } from './data4/data4.component';
+import { Data5Component } from './data5/data5.component';
+import { Data6Component } from './data6/data6.component';
+import { Data7Component } from './data7/data7.component';
 
 const routes: Routes = [
   {
@@ -28,6 +33,21 @@ const routes: Routes = [
       },
       {
         path: 'data2', component: Data2Component    
+      },
+      {
+        path: 'data3', component: Data3Component    
+      },
+      {
+        path: 'data4', component: Data4Component    
+      },
+      {
+        path: 'data5', component: Data5Component    
+      },
+      {
+        path: 'data6', component: Data6Component    
+      },
+      {
+        path: 'data7', component: Data7Component    
       },
       {
         path: 'analytics', component: AnalyticsComponent

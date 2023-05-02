@@ -30,6 +30,11 @@ import { ExploreComponent } from './explore/explore.component';
 import { HistoryComponent } from './history/history.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { PluginsComponent } from './plugins/plugins.component';
+import { Data3Component } from './data3/data3.component';
+import { Data4Component } from './data4/data4.component';
+import { Data5Component } from './data5/data5.component';
+import { Data6Component } from './data6/data6.component';
+import { Data7Component } from './data7/data7.component';
 
 
 
@@ -49,7 +54,12 @@ import { PluginsComponent } from './plugins/plugins.component';
     ChartsComponent,
     ExploreComponent,
     HistoryComponent,
-    PluginsComponent
+    PluginsComponent,
+    Data3Component,
+    Data4Component,
+    Data5Component,
+    Data6Component,
+    Data7Component
   ],
   imports: [
     BrowserModule,
