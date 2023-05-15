@@ -51,6 +51,31 @@
     width: auto !important; 
 }
 
+// tab responsive starts here
+
+@media only screen and (min-width:767px) and (max-width:1028px){
+
+
+}
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px){
+  .calender-wrapper{
+  .p-datepicker {
+    border: none !important;
+  }
+  .p-panel .p-panel-content {
+     padding: 0rem !important;}
+}
+.direct-cta-wrapper .p-panel .p-panel-content {
+  padding: 0rem;
+}
+  
+
+}
+// mobile responsive ends here
 
 
 

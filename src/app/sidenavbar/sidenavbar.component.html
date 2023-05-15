@@ -1,6 +1,6 @@
 <div class="sidebar" [class.sidebar-close]="!openSidebar">
   <div class="logo-details">
-    <div class="">
+    <div class="sidebar-img">
       <img src="../../assets/1.webp" alt="" style="width:80%; border-radius:80px;" class="ms-1">
     </div>
   </div>
@@ -29,7 +29,7 @@
 </ul>
 </div>
 <section class="home-section bg-black-alpha-10" style="height: 100%;">
-  <div class="home-header ">
+  <div class="container-fluid home-header ">
     <div class="hamburger-menu">
       <input type="checkbox" id="checkbox-hamburger-menu" [(ngModel)]="openSidebar" />
       <label class="label-hamburger-menu" for="checkbox-hamburger-menu">
@@ -38,25 +38,25 @@
         <div class="bar"></div>
       </label>
     </div>
-    <div class="title  d-flex col-10">
-      <div class="d-flex col-8">
-        <!-- <div class=" flex-grow-2 bd-highlight p-2">Home</div>
-        <div class="p-2 flex-grow-1 bd-highlight">Contacts</div> -->
+    <div class="title  d-flex">
+     
+      <div class="d-flex">
+       
       </div>
-      <div class="col-1">
-        <div class=" bd-highlight  me-3 mb gap-3 d-flex m-1">
+      <div class="">
+        <div class=" bd-highlight  d-flex">
           <div class="p-1 bd-highlight icon text-color"><i class="pi pi-search text-1xl"></i></div>
           <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-comments text-1xl" pBadge value="2"
               severity="success"></i> </div>
           <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-bell text-1xl" pBadge value="2" severity="danger"></i>
           </div>
           <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-arrows-alt text-1xl"></i> </div>
-          <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-inbox  text-1xl"></i> </div>
+          <div class="p-1 home-header-lasticon bd-highlight text-color "> <i class="pi pi-inbox  text-1xl"></i> </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="">
+  <div class="main-content-wrapper">
     <router-outlet></router-outlet>
   </div>
 

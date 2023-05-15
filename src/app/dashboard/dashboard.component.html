@@ -1,11 +1,11 @@
 <h4 class="m-3 font-bold text-black-500">Dashboard</h4>
 <!-- cards -->
 
-<div class="ms-1 d-flex m-1 p-2 gap-2">
+<div class="ms-1 dashboard-info-wrapper d-flex m-1 p-2 gap-2">
 <div class="card w-25">
      <div class="bg-cyan-600 border-round ">
       <div class="d-flex justify-content-between">
-        <div class="m-2">
+        <div class="m-2 dashboard-info-wrapper-title">
           <h3 class="fw-bold ms-4 text-50">500</h3>
           <h6 class="font-light ms-4 text-50">New orders</h6>
         </div>
@@ -22,7 +22,7 @@
 <div class="card w-25 "> 
     <div class="bg-green-600 border-round ">
       <div class="d-flex justify-content-between">
-        <div class="mt-3">
+        <div class="mt-3 dashboard-info-wrapper-title">
           <h3 class="fw-bold ms-4 text-50">50%</h3>
           <h6 class="font-light ms-4 text-50">Bounce Rate</h6>
         </div>
@@ -39,7 +39,7 @@
 <div class="card w-25">    
   <div class=" bg-yellow-500 border-round">
     <div class="d-flex justify-content-between">
-      <div class="mt-3">
+      <div class="mt-3 dashboard-info-wrapper-title">
         <h3 class="fw-bold ms-4 text-50 ">50</h3>
         <h6 class="font-light ms-4 text-50 ">User Registrations</h6>
       </div>
@@ -56,7 +56,7 @@
 <div class="card w-25">  
     <div class="bg-red-600 border-round">
       <div class="d-flex justify-content-between">
-        <div class="mt-3">
+        <div class="mt-3 dashboard-info-wrapper-title">
           <h3 class="fw-bold ms-4 text-50">40</h3>
           <h6 class="font-light ms-4 text-50">Unique Visitors</h6>
         </div>
@@ -74,7 +74,7 @@
 
 <!-- chart -->
 
-<div class="d-flex gap-2 ms-2">
+<div class="d-flex sales-content-wrapper gap-2 ms-2">
   <div class="card w-50 ">
     <p-tabView class="customTabs">
       <p-tabPanel header="Polar">
@@ -99,8 +99,8 @@
   <!-- paginations -->
 
 
-  <div class="card w-50 me-2 auto " style="height: 490px;">
-    <div class="d-flex justify-content-lg-between m-2">
+  <div class="card to-dolist-content w-50 me-2 auto " >
+    <div class="d-flex to-dolist-content-title justify-content-lg-between m-2">
       <div class="d-flex">
         <span class="material-icons m-2">receipt_long</span>
         <h6 class="mt-2 font-bold">To Do List</h6>
@@ -117,7 +117,7 @@
 
     <!-- cards data -->
    <div class="p-2">
-    <div class="card">
+    <div class="card to-dolist-content-block">
       <div class="d-flex bg-blue-100 ">
         <span class="material-icons m-2 ">blur_on</span>
         <form [formGroup]="myForm" class="mt-2 d-flex">
@@ -135,7 +135,7 @@
         <span class=" Editicon material-icons m-2 m-auto text-red-500 text-sm Edit">border_color</span>
       </div>
     </div>
-    <div class="card">
+    <div class="card to-dolist-content-block">
       <div class="d-flex bg-blue-100 mt-1">
         <span class="material-icons m-2 ">blur_on</span>
         <form [formGroup]="myForm1" class="mt-2 d-flex">
@@ -153,7 +153,7 @@
         <span class=" Editicon material-icons m-2 m-auto text-red-500 text-sm">border_color</span>
       </div>
     </div>
-    <div class="card">
+    <div class="card to-dolist-content-block">
       <div class="d-flex bg-blue-100 mt-1">
         <span class="material-icons m-2 ">blur_on</span>
         <form [formGroup]="myForm2" class="mt-2 d-flex">
@@ -171,7 +171,7 @@
         <span class=" Editicon material-icons m-2 m-auto text-red-500 text-sm">border_color</span>
       </div>
     </div>
-    <div class="card">
+    <div class="card to-dolist-content-block">
       <div class="d-flex bg-blue-100 mt-1">
         <span class="material-icons m-2 ">blur_on</span>
         <form [formGroup]="myForm3" class="mt-2 d-flex">
@@ -189,7 +189,7 @@
         <span class=" Editicon material-icons m-2 m-auto text-red-500 text-sm">border_color</span>
       </div>
     </div>
-    <div class="card">
+    <div class="card to-dolist-content-block">
       <div class="d-flex bg-blue-100 mt-1">
         <span class="material-icons m-2 ">blur_on</span>
         <form [formGroup]="myForm4" class="mt-2 d-flex">
@@ -200,14 +200,14 @@
           <h6 [style.textDecoration]="myForm4.get('checked')?.value === false ? 'line-through' : 'none'"
             class="m-1 ms-2">
             Check your messages and notifications</h6>
-          <p-tag value="New"
+          <p-tag value="New" class="to-dolist-content-block-button"
             [ngClass]="{'tag-disabled': myForm4.get('checked')?.value === false, 'tag-highlighted': myForm4.get('checked')?.value === true}"
             severity="success"></p-tag>
         </form>
         <span class=" Editicon material-icons m-2 m-auto text-red-500 text-sm">border_color</span>
       </div>
     </div>
-    <div class="card">
+    <div class="card to-dolist-content-block">
       <div class="d-flex bg-blue-100 mt-1">
         <span class="material-icons m-2 ">blur_on</span>
         <form [formGroup]="myForm5" class="mt-2 d-flex">
@@ -225,7 +225,7 @@
         <span class=" Editicon material-icons m-2 m-auto text-red-500 text-sm vamc" >border_color</span>
       </div>
     </div>
-    <div class="card">
+    <div class="card to-dolist-content-block">
       <div class="d-flex bg-blue-100 mt-1">
         <span class="material-icons m-2 ">blur_on</span>
         <form [formGroup]="myForm6" class="mt-2 d-flex">
@@ -242,8 +242,8 @@
         </form>
         <span class=" Editicon material-icons m-2 m-auto text-red-500 text-sm">border_color</span>
       </div>
-      <div>
-        <div class="m-3">
+      <div class="to-dolist-content-button">
+        <div class="m-3 ">
           <button class="btn btn-primary">Add Item</button>
         </div>
       </div>
@@ -252,7 +252,7 @@
     <!-- date -->
 
 
-    <div style="margin-top: 30px;">
+    <div class="sales-graph-wrapper" style="margin-top: 30px;">
 
       <p-panel [toggleable]="true">
         <ng-template pTemplate="header">
@@ -265,7 +265,7 @@
         <div class="chart p-3 ">
           <p-chart type="line" [data]="data1" [options]="options1" class="data"></p-chart>
         </div>
-        <div class="d-flex justify-content-around mb-4 knob p-3">
+        <div class="d-flex justify-content-around circle-justify-content-around mb-4 knob p-3">
           <div>
             <p-knob [(ngModel)]="value" valueTemplate="{value}%" [size]="100" thickness="0.2" padding="0.05"></p-knob>
           </div>
@@ -275,7 +275,7 @@
         </div>
       </p-panel>
     </div>
-    <div class="card mt-2">
+    <div class="card sales-graph-wrapper-map mt-2">
       <div id="usa-map">
         <div class="svg-container">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="usa"
@@ -392,7 +392,7 @@
   
 </div>
 
-<div class="w-50 m-1 p-1 pe-2">
+<div class="w-50 calender-wrapper m-1 p-1 pe-2">
   <p-panel [toggleable]="true">
     <ng-template pTemplate="header">
       <span class="material-icons m-2">calendar_month</span>
@@ -405,7 +405,7 @@
 
 <!-- Direct Chat -->
 
-<div class="w-50 pe-2 ps-1 m-1">
+<div class="w-50 pe-2 ps-1 m-1 direct-cta-wrapper">
   <p-panel [toggleable]="true" class="p-panel-content ng-tns-c12-3">
     <ng-template pTemplate="header">
       <div class="d-flex justify-content-between">

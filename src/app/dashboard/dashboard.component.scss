@@ -163,5 +163,202 @@
   max-height: 500px; /* adjust as needed */
   overflow-y: auto;
 }
+.sales-graph-wrapper #usa-map{
+  min-height: 544px;
 
+}
+.to-dolist-content{
+  height: 490px;
+}
+// tab responsive starts here
+
+@media only screen and (min-width:767px) and (max-width:1028px){
+  .dashboard-info-wrapper{
+flex-wrap: wrap;
+    margin: 0px !important;
+    padding: 0px !important;
+    justify-content: space-between;
+  margin-bottom: 30px !important;
+
+  }
+  .dashboard-info-wrapper .card{
+    width: 49% !important;
+    
+  }
+  
+.sales-content-wrapper{
+  flex-direction: column;
+  margin-left: 0px !important;
+}
+.sales-content-wrapper .card{
+  width: 100% !important;
+}
+.sales-graph-wrapper{
+  margin-top: 20px !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  #usa-map{
+height: 290px;
+  }
+}
+
+
+.calender-wrapper{
+  width: 100% !important;
+  margin: 20px 0px !important;
+  padding: 0px !important;
+  .p-datepicker {
+    border: none !important;
+  }
+  .p-panel .p-panel-content {
+     padding: 0rem !important;}
+}
+.direct-cta-wrapper{
+  width: 100% !important;
+
+}
+.sales-graph-wrapper{
+  display: block !important;
+}
+.direct-cta-wrapper{
+  margin-top: 20px !important;
+  margin-left: 0px !important;
+}
+.sales-graph-wrapper-map{
+  margin-top: 20px !important;
+  #use-map{
+    border: none;
+  }
+}
+.dashboard-info-wrapper-title{
+  margin: 1.8rem 0rem 0rem 0rem !important;
+}
+.to-dolist-content-block h6{
+  font-size: 21px !important;
+}
+.to-dolist-content-title h6{
+  font-size: 22px !important;
+}
+.to-dolist-content{
+  height: auto !important;
+  margin-top: 10px;
+  background:none;
+  .to-dolist-content-title{
+    background-color: #fff;
+    padding: 20px 10px;
+    margin: 0px !important;
+  }
+  .to-dolist-content-button{
+    margin: 0px auto !important;
+    width: 100%;
+  }
+
+ 
+  .to-dolist-content-button button{
+    width: 100%;
+    font-size: 22px;
+  }
+}
+.sales-graph-wrapper h5{
+font-size: 22px !important;
+}
+.calender-wrapper h5{
+font-size: 22px !important;
+
+}
+.circle-justify-content-around{
+  margin-bottom: 0px !important;
+  margin-top: 15px;
+}
+.direct-cta-wrapper h5{
+  font-size: 22px ;
+}
+
+}
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px){
+.dashboard-info-wrapper{
+  flex-direction: column;
+  margin: 0px !important;
+  padding: 0px !important;
+  margin-bottom: 15px !important;
+}
+.to-dolist-content-block-button{
+  position: relative;
+  left: -45px;
+}
+.circle-justify-content-around{
+  margin-bottom: 0px !important;
+  margin-top: 10px;
+}
+.dashboard-info-wrapper .card{
+  width: 100% !important;
+  
+}
+.dashboard-info-wrapper-title{
+  margin: 2rem 1rem !important;
+}
+.sales-content-wrapper{
+  flex-direction: column;
+  margin-left: 0px !important;
+}
+.sales-content-wrapper .card{
+  width: 100% !important;
+}
+.sales-graph-wrapper{
+  margin-top: 20px !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  #usa-map{
+height: 290px;
+  }
+}
+
+
+.calender-wrapper{
+  width: 100% !important;
+  margin: 20px 0px !important;
+  padding: 0px !important;
+  .p-datepicker {
+    border: none !important;
+  }
+  .p-panel .p-panel-content {
+     padding: 0rem !important;}
+}
+.direct-cta-wrapper{
+  width: 100% !important;
+
+}
+.sales-graph-wrapper{
+  display: block !important;
+}
+.direct-cta-wrapper{
+  margin-top: 20px !important;
+  margin-left: 0px !important;
+}
+.sales-graph-wrapper-map{
+  margin-top: 20px !important;
+  #use-map{
+    border: none;
+  }
+}
+
+.to-dolist-content{
+  height: auto !important;
+  margin-top: 10px;
+  background:none;
+  .to-dolist-content-title{
+    background-color: #fff;
+    padding: 20px 10px;
+    margin: 0px !important;
+  }
+  .to-dolist-content-button{
+    margin: 0px auto !important;
+  }
+}
+}
+// mobile responsive ends here
 
